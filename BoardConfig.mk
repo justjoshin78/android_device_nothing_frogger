@@ -135,7 +135,8 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_KERNEL_SOURCE := kernel/nothing/sm7635
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
-    vendor/pineapple_GKI.config
+    vendor/pineapple_GKI.config \
+    vendor/frogger.config
 TARGET_MERGE_DTBS_WILDCARD := *volcano*
 
 # Kernel Modules
