@@ -445,7 +445,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Telephony
 PRODUCT_PACKAGES += \
     libcxx_shim \
-    libdmabufheap_shim
+    libdmabufheap_shim \
+    libinput_shim
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
