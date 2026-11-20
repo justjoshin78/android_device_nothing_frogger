@@ -35,4 +35,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- QMS: C5.0 vendor ships ITxPwrService V8; 23.2 qcom-caf/common only lists 1-7 -->
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.data.txpwrservice</name>
+        <version>8</version>
+        <interface>
+            <name>ITxPwrService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
