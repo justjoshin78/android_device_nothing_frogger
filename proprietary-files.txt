@@ -1294,7 +1294,7 @@ system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
 system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
-system/lib64/libprotobuf-cpp-full-6.33.5.so:system_ext/lib64/libprotobuf-cpp-full-6.33.5.so|ec52ce204e6e2b986f8780e8a549d57559a4ee18
+system/lib64/libprotobuf-cpp-full-6.33.5.so:system_ext/lib64/libprotobuf-cpp-full-6.33.5.so|ec52ce204e6e2b986f8780e8a549d57559a4ee18|1b36ac3d00d3c793a6b8a495652f32e4b90686f4
 system_ext/lib64/libqccdme.so
 system_ext/lib64/libqccfileservice.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so

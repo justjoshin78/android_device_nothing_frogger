@@ -444,6 +444,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Telephony
 PRODUCT_PACKAGES += \
+    libcxx_shim \
     libdmabufheap_shim
 
 PRODUCT_COPY_FILES += \

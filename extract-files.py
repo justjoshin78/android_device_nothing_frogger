@@ -57,6 +57,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libprotobuf-cpp-full-6.33.5.so': blob_fixup()
+        .add_needed('libcxx_shim.so'),
     'system_ext/lib64/lib-imsvt.so': blob_fixup()
         .add_needed('libdmabufheap_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
