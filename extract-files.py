@@ -57,6 +57,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/lib-imsvt.so': blob_fixup()
+        .add_needed('libdmabufheap_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V4.cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     'vendor/bin/hw/android.hardware.biometrics.face-service.noth': blob_fixup()
