@@ -57,12 +57,14 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/lib64/libprotobuf-cpp-full-6.33.5.so': blob_fixup()
-        .add_needed('libcxx_shim.so'),
     'system_ext/lib64/lib-imsvt.so': blob_fixup()
         .add_needed('libdmabufheap_shim.so'),
+    'system_ext/lib64/libprotobuf-cpp-full-b41.so': blob_fixup()
+        .fix_soname(),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
+    'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-b41.so'),
     'vendor/bin/hw/android.hardware.biometrics.face-service.noth': blob_fixup()
         .replace_needed('libcamera2ndk_vendor.so', 'libcamera2ndk_vendor-v34.so'), 
     'vendor/bin/qcc-vendor': blob_fixup()

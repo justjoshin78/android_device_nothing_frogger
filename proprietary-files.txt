@@ -842,7 +842,7 @@ vendor/etc/ssg/tz_whitelist.json
 vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libtaautoload.so
 
-# DPM
+# DPM (system) - from frogger B4.1-260911-0959
 system_ext/bin/dpmd
 system_ext/bin/tcmd
 system_ext/etc/dpm/dpm.conf
@@ -861,6 +861,8 @@ system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+
+# DPM (vendor)
 vendor/bin/dpmQmiMgr
 vendor/bin/vendor.dpmd
 vendor/etc/dpm_vndr/vendor.dpm.conf
@@ -1070,13 +1072,13 @@ vendor/bin/hw/android.hardware.gatekeeper-service-qti
 vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/lib64/hw/libqtigatekeeper.so
 
-# Hotword
+# Hotword (system) - from frogger B4.1-260911-0959
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
 product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util_WIDEBAND.xml
 system_ext/framework/com.android.hotwordenrollment.common.util_WIDEBAND.jar
 
-# IMS
+# IMS (system) - from frogger B4.1-260911-0959
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/permissions/vendor.qti.imsdcservice.xml
@@ -1106,7 +1108,7 @@ system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
-system_ext/lib64/libSurfaceUtil_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libSurfaceUtil_jni.so
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
@@ -1114,6 +1116,8 @@ system_ext/lib64/vendor.qti.ims.datachannelservice-V2-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk
+
+# IMS (vendor)
 vendor/bin/ims-dataservice-daemon
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
@@ -1284,7 +1288,7 @@ vendor/lib64/libperipheral_client.so
 # Public Libraries
 vendor/etc/public.libraries.txt
 
-# QCC
+# QCC (system) - from frogger B4.1-260911-0959
 system_ext/app/QCC/QCC.apk
 system_ext/bin/qccsyshal@1.2-service
 system_ext/bin/qccsyshal_aidl-service
@@ -1294,7 +1298,7 @@ system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
 system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
-system/lib64/libprotobuf-cpp-full-6.33.5.so:system_ext/lib64/libprotobuf-cpp-full-6.33.5.so|ec52ce204e6e2b986f8780e8a549d57559a4ee18|1b36ac3d00d3c793a6b8a495652f32e4b90686f4
+system/lib64/libprotobuf-cpp-full.so:system_ext/lib64/libprotobuf-cpp-full-b41.so
 system_ext/lib64/libqccdme.so
 system_ext/lib64/libqccfileservice.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
@@ -1305,6 +1309,8 @@ system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
+
+# QCC (vendor)
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml
@@ -1345,7 +1351,7 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libsystem_health_mon.so
 
-# QCRIL
+# QCRIL (system) - from frogger B4.1-260911-0959
 product/app/uimgbaservice/uimgbaservice.apk
 product/app/uimremoteclient/uimremoteclient.apk
 product/app/uimremoteserver/uimremoteserver.apk
@@ -1364,6 +1370,8 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/QtiTelephony/QtiTelephony.apk
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# QCRIL (vendor)
 vendor/bin/hw/qcrilNrd
 vendor/etc/init/dcfd.rc
 vendor/etc/init/qcrilNrd.rc
