@@ -1369,6 +1369,7 @@ system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/QtiTelephony/QtiTelephony.apk
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # QCRIL (vendor)
