@@ -88,6 +88,7 @@ ipam.ko
 ipanetm.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
+led_aw20036.ko
 llcc-qcom.ko
 llcc_perfmon.ko
 lpass_cdc_dlkm.ko
