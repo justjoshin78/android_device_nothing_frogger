@@ -8,4 +8,9 @@
 
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- Keep the panel out of its 30 Hz AOD timing while the screen is on.
+         The panel driver re-applies brightness when leaving 30 Hz, which
+         shows up as a brief flash. -->
+    <string name="def_min_refresh_rate" translatable="false">60.0</string>
 </resources>

@@ -1,0 +1,2 @@
+# Memory stats readers in system_app (zram0/mm_stat)
+r_dir_file(system_app, sysfs_zram)
