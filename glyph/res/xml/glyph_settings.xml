@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/glyph_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="glyph_enabled"
+        android:defaultValue="true"
+        android:title="@string/glyph_enabled_title" />
+
+    <PreferenceCategory
+        android:title="@string/category_lights"
+        android:dependency="glyph_enabled">
+
+        <SeekBarPreference
+            android:key="glyph_brightness"
+            android:title="@string/brightness_title"
+            android:defaultValue="50"
+            android:max="100"
+            app:min="5"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="false" />
+
+        <Preference
+            android:key="glyph_test"
+            android:title="@string/test_title"
+            android:summary="@string/test_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="glyph_priority"
+        android:title="@string/category_priority"
+        android:summary="@string/priority_summary"
+        android:dependency="glyph_enabled">
+
+        <ListPreference
+            android:key="glyph_priority_1"
+            android:defaultValue="calls"
+            android:title="@string/priority_1_title"
+            android:entries="@array/source_entries"
+            android:entryValues="@array/source_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="glyph_priority_2"
+            android:defaultValue="notifications"
+            android:title="@string/priority_2_title"
+            android:entries="@array/source_entries"
+            android:entryValues="@array/source_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="glyph_priority_3"
+            android:defaultValue="progress"
+            android:title="@string/priority_3_title"
+            android:entries="@array/source_entries"
+            android:entryValues="@array/source_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="glyph_priority_4"
+            android:defaultValue="levels"
+            android:title="@string/priority_4_title"
+            android:entries="@array/source_entries"
+            android:entryValues="@array/source_values"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_progress"
+        android:dependency="glyph_enabled">
+
+        <SwitchPreferenceCompat
+            android:key="glyph_progress"
+            android:defaultValue="true"
+            android:title="@string/progress_title"
+            android:summary="@string/progress_summary" />
+
+        <ListPreference
+            android:key="glyph_progress_direction"
+            android:dependency="glyph_progress"
+            android:defaultValue="top_down"
+            android:title="@string/progress_direction_title"
+            android:entries="@array/direction_entries"
+            android:entryValues="@array/direction_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <MultiSelectListPreference
+            android:key="glyph_progress_excluded"
+            android:dependency="glyph_progress"
+            android:title="@string/progress_excluded_title"
+            android:summary="@string/progress_excluded_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_levels"
+        android:dependency="glyph_enabled">
+
+        <ListPreference
+            android:key="glyph_level_direction"
+            android:defaultValue="bottom_up"
+            android:title="@string/level_direction_title"
+            android:entries="@array/direction_entries"
+            android:entryValues="@array/direction_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="glyph_volume"
+            android:defaultValue="true"
+            android:title="@string/volume_title"
+            android:summary="@string/volume_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="glyph_charging"
+            android:defaultValue="true"
+            android:title="@string/charging_title"
+            android:summary="@string/charging_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_alerts"
+        android:dependency="glyph_enabled">
+
+        <SwitchPreferenceCompat
+            android:key="glyph_notifications"
+            android:defaultValue="true"
+            android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="glyph_calls"
+            android:defaultValue="true"
+            android:title="@string/calls_title"
+            android:summary="@string/calls_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

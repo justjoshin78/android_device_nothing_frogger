@@ -1,0 +1,4 @@
+# Glyph app (org.lineageos.glyph, system uid) drives the aw20036 Glyph LEDs
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_leds:lnk_file read;
+allow system_app vendor_sysfs_glyph:file rw_file_perms;

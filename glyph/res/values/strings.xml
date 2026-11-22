@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Glyph</string>
+    <string name="glyph_title">Glyph Interface</string>
+    <string name="glyph_summary">Lights, progress bars and level meters</string>
+    <string name="glyph_enabled_title">Use Glyph lights</string>
+    <string name="tile_label">Glyph</string>
+    <string name="listener_label">Glyph lights</string>
+
+    <string name="category_lights">Lights</string>
+    <string name="brightness_title">Brightness</string>
+    <string name="test_title">Test lights</string>
+    <string name="test_summary">Play a progress fill on the Glyph lights</string>
+
+    <string name="category_priority">Priority</string>
+    <string name="priority_summary">When several things want the lights at once, the highest one is shown</string>
+    <string name="priority_1_title">Highest priority</string>
+    <string name="priority_2_title">Second priority</string>
+    <string name="priority_3_title">Third priority</string>
+    <string name="priority_4_title">Lowest priority</string>
+    <string name="source_calls">Incoming calls</string>
+    <string name="source_notifications">Notifications</string>
+    <string name="source_progress">Progress bars</string>
+    <string name="source_levels">Level meters (volume, charging)</string>
+
+    <string name="category_progress">Progress bars</string>
+    <string name="progress_title">Show progress bars</string>
+    <string name="progress_summary">Show progress from any notification, such as downloads or navigation</string>
+    <string name="progress_direction_title">Progress fill direction</string>
+    <string name="progress_excluded_title">Excluded apps</string>
+    <string name="progress_excluded_summary">Apps whose progress bars are not shown</string>
+
+    <string name="category_levels">Level meters</string>
+    <string name="level_direction_title">Level fill direction</string>
+    <string name="volume_title">Volume</string>
+    <string name="volume_summary">Show the volume level when it changes</string>
+    <string name="charging_title">Charging</string>
+    <string name="charging_summary">Show the battery level when a charger is connected</string>
+
+    <string name="category_alerts">Alerts</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_summary">Flash for new notifications that would alert you</string>
+    <string name="calls_title">Incoming calls</string>
+    <string name="calls_summary">Sweep the lights while the phone rings</string>
+
+    <string name="direction_top_down">Top to bottom</string>
+    <string name="direction_bottom_up">Bottom to top</string>
+</resources>

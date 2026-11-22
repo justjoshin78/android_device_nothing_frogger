@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- A vertical bar of light segments, with the bottom one as a dot. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?android:attr/colorControlNormal">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M10,2h4v2.5h-4z M10,5.5h4v2.5h-4z M10,9h4v2.5h-4z M10,12.5h4v2.5h-4z M10,16h4v2.5h-4z M12,19.5a1.25,1.25 0,1 1,0 2.5a1.25,1.25 0,1 1,0 -2.5z" />
+</vector>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string-array name="direction_entries" translatable="false">
+        <item>@string/direction_top_down</item>
+        <item>@string/direction_bottom_up</item>
+    </string-array>
+    <string-array name="source_entries" translatable="false">
+        <item>@string/source_calls</item>
+        <item>@string/source_notifications</item>
+        <item>@string/source_progress</item>
+        <item>@string/source_levels</item>
+    </string-array>
+    <string-array name="source_values" translatable="false">
+        <item>calls</item>
+        <item>notifications</item>
+        <item>progress</item>
+        <item>levels</item>
+    </string-array>
+    <string-array name="direction_values" translatable="false">
+        <item>top_down</item>
+        <item>bottom_up</item>
+    </string-array>
+</resources>
