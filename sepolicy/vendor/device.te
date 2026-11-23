@@ -1,3 +1,9 @@
 # Lights
 type led_device, dev_type;
 type vendor_sysfs_glyph, fs_type, sysfs_type;
+
+# Vibrator (rt6010 SFDC calibration node)
+type vendor_ics_haptic_device, dev_type;
+
+# UFS LU0-3/5 bsg nodes probed by qseecomd (LU4 is already vendor_ufs_lun4_bsg_device)
+type vendor_ufs_lun_bsg_device, dev_type;

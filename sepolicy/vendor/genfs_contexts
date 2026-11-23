@@ -33,3 +33,22 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/wakeup        
 genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/daq_data    u:object_r:vendor_sysfs_haptics:s0
 genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/daq_en      u:object_r:vendor_sysfs_haptics:s0
 genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/f0_en       u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/adc_offset    u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/autotrack_f0  u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/brake_en      u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/chip_id       u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/daq_duration  u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/f0            u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/gain          u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/play          u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/resistance    u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/sfdc_f0       u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/state         u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/stream1_data  u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/stream1_start u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/stream_data   u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/stream_start  u:object_r:vendor_sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_1_geni_se/884000.i2c/i2c-8/8-005f/leds/vibrator_nt/vbst          u:object_r:vendor_sysfs_haptics:s0
+
+# Audio jack extcon (read by system_server's WiredAccessoryManager)
+genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:lpass-cdc/wcd9378-codec/extcon    u:object_r:sysfs_extcon:s0

@@ -1,2 +1,4 @@
 allow device_extras vendor_proc_power_supply:file rw_file_perms;
 allow device_extras vendor_proc_power_supply:dir r_dir_perms;
+# Qualcomm QSPM performance hints from hwui RenderThread
+hal_client_domain(device_extras, vendor_hal_qspmhal)

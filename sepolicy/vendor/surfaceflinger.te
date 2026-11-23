@@ -1,0 +1,2 @@
+# Qualcomm QSPM performance hints
+hal_client_domain(surfaceflinger, vendor_hal_qspmhal)

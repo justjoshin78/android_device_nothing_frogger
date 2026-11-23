@@ -37,3 +37,9 @@
 
 # ZRAM
 /data/per_boot(/.*)?    u:object_r:per_boot_file:s0
+
+# Vibrator
+/dev/ics_sfdc                                                      u:object_r:vendor_ics_haptic_device:s0
+
+# UFS bsg nodes for qseecomd
+/dev/0:0:0:[0-35]                                                  u:object_r:vendor_ufs_lun_bsg_device:s0

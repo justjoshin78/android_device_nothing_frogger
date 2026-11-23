@@ -2,3 +2,5 @@
 allow tee vendor_gpt_block_device:blk_file { read open };
 allow tee vendor_xbl_block_device:blk_file { read open };
 allow tee boot_block_device:blk_file { read open };
+# qseecomd probes the UFS logical units over bsg (SG_IO)
+allow tee vendor_ufs_lun_bsg_device:chr_file rw_file_perms;

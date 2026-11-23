@@ -1,0 +1,2 @@
+# Qualcomm QSPM performance hints from hwui RenderThread
+hal_client_domain(bootanim, vendor_hal_qspmhal)

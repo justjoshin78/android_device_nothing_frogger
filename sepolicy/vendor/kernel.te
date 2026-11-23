@@ -1,1 +1,4 @@
 allow kernel per_boot_file:file r_file_perms;
+
+# krfcommd (kernel RFCOMM, unused by the userspace Bluetooth stack)
+dontaudit kernel self:capability net_bind_service;
