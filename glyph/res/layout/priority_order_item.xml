@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:background="@drawable/priority_item_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/priority_rank"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="?android:attr/colorAccent" />
+
+    <TextView
+        android:id="@+id/priority_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <ImageView
+        android:id="@+id/priority_handle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="center"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_drag_handle"
+        android:tint="?android:attr/textColorSecondary" />
+</LinearLayout>

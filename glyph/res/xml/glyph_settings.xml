@@ -34,40 +34,11 @@
     <PreferenceCategory
         android:key="glyph_priority"
         android:title="@string/category_priority"
-        android:summary="@string/priority_summary"
         android:dependency="glyph_enabled">
 
-        <ListPreference
-            android:key="glyph_priority_1"
-            android:defaultValue="calls"
-            android:title="@string/priority_1_title"
-            android:entries="@array/source_entries"
-            android:entryValues="@array/source_values"
-            app:useSimpleSummaryProvider="true" />
-
-        <ListPreference
-            android:key="glyph_priority_2"
-            android:defaultValue="notifications"
-            android:title="@string/priority_2_title"
-            android:entries="@array/source_entries"
-            android:entryValues="@array/source_values"
-            app:useSimpleSummaryProvider="true" />
-
-        <ListPreference
-            android:key="glyph_priority_3"
-            android:defaultValue="progress"
-            android:title="@string/priority_3_title"
-            android:entries="@array/source_entries"
-            android:entryValues="@array/source_values"
-            app:useSimpleSummaryProvider="true" />
-
-        <ListPreference
-            android:key="glyph_priority_4"
-            android:defaultValue="levels"
-            android:title="@string/priority_4_title"
-            android:entries="@array/source_entries"
-            android:entryValues="@array/source_values"
-            app:useSimpleSummaryProvider="true" />
+        <org.lineageos.glyph.PriorityOrderPreference
+            android:key="glyph_priority_order"
+            android:summary="@string/priority_order_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

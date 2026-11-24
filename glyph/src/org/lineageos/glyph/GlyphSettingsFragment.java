@@ -57,33 +57,6 @@ public class GlyphSettingsFragment extends SettingsBasePreferenceFragment {
         });
 
         populateApps(findPreference(GlyphSettings.KEY_PROGRESS_EXCLUDED));
-        setUpPriority();
-    }
-
-    /**
-     * Keeps the four priority slots a complete ranking: picking a source for one slot swaps it
-     * with the slot that held that source.
-     */
-    private void setUpPriority() {
-        // Show the effective order, repairing any duplicate left in storage.
-        List<String> order = GlyphSettings.getPriorityOrder(requireContext());
-        ListPreference[] slots = new ListPreference[GlyphSettings.KEY_PRIORITY.length];
-        for (int i = 0; i < slots.length; i++) {
-            slots[i] = findPreference(GlyphSettings.KEY_PRIORITY[i]);
-            if (!order.get(i).equals(slots[i].getValue())) slots[i].setValue(order.get(i));
-        }
-        for (int i = 0; i < slots.length; i++) {
-            final ListPreference slot = slots[i];
-            slot.setOnPreferenceChangeListener((p, newValue) -> {
-                String previous = slot.getValue();
-                for (ListPreference other : slots) {
-                    if (other != slot && newValue.equals(other.getValue())) {
-                        other.setValue(previous);
-                    }
-                }
-                return true;
-            });
-        }
     }
 
     /** Lists launchable apps, sorted by name, for the progress-bar exclusion list. */

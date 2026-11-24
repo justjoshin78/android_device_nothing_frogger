@@ -15,6 +15,7 @@ android_app {
     static_libs: [
         "androidx.core_core",
         "androidx.preference_preference",
+        "androidx.recyclerview_recyclerview",
     ],
     required: ["privapp_whitelist_org.lineageos.glyph"],
     optimize: {
