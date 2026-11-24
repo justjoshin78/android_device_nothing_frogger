@@ -3,13 +3,26 @@
      SPDX-FileCopyrightText: 2026 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<!-- Opaque so a dragged row covers the rows it passes over. -->
+<!-- Opaque so a dragged row covers the rows it passes over. Theme colors must sit inside a
+     shape: a bare ?attr drawable cannot be resolved by a selector. -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_activated="true">
         <layer-list>
-            <item android:drawable="?android:attr/colorBackground" />
-            <item android:drawable="?android:attr/colorControlHighlight" />
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?android:attr/colorBackground" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?android:attr/colorControlHighlight" />
+                </shape>
+            </item>
         </layer-list>
     </item>
-    <item android:drawable="?android:attr/colorBackground" />
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?android:attr/colorBackground" />
+        </shape>
+    </item>
 </selector>
